@@ -5,7 +5,7 @@ with the following features:
 - Movement through the world
 - Inventory (basic)
 
-Result product: https://asciinema.org/a/1A8tJH6oH7ycdPtnKtDdtosvc
+Result product: https://asciinema.org/a/aU26DhftDZDfFkZpHtPEqQzwi
 
 # Installation
 If you want to run the finished script you can download
