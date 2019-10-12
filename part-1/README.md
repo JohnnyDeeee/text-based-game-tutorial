@@ -7,8 +7,10 @@ with the following features:
 
 # Installation
 If you want to run the finished script you can download
-the zip file from github or copy the script
-from above.
+the [zip file](https://github.com/JohnnyDeeee/text-based-game-tutorial/archive/master.zip)
+from github
+or [copy](https://raw.githubusercontent.com/JohnnyDeeee/text-based-game-tutorial/master/part-1/main.py?token=ACEWTOBPISOESEV4FR62RTC5UHZF4)
+the script from above.
 
 # Getting started
 I recommend using [PyCharm](https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=windows&code=PCC)
@@ -439,5 +441,33 @@ that tile.
 
 Try it out, walk towards an item inside your world and see what
 happens.
+
+## Delay
+It all happens kinda fast so lets add some delay after we got
+the item's action message.
+
+To do this add the following code at the top of your script:
+```python
+import time
+```
+This will import a python "package" (or library). It is just
+a set of functions you can use in your code. This one is installed
+with python so you can always use it. You can also use 3rd party
+packages but you will have to download them first (this is outside
+of the scope of this tutorial)
+
+Now let's update our `addToInventory()` function:
+```python
+def addToInventory(item_name, item_amount):
+    for i in range(0, item_amount):
+        inventory.append(item_name)
+    print("{}x {} have been added to your inventory!".format(item_amount, item_name))
+    time.sleep(1)
+```
+We can call `time.sleep(X)` to wait for X seconds.
+After the wait is over, the rest of the program continues.
+
+Now if you walk onto an item tile, you will see the action message
+and the other messages will appear a second later.
 
 This is the end of part-1
