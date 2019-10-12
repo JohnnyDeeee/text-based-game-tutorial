@@ -5,6 +5,8 @@ with the following features:
 - Movement through the world
 - Inventory (basic)
 
+Result product: https://asciinema.org/a/1A8tJH6oH7ycdPtnKtDdtosvc
+
 # Installation
 If you want to run the finished script you can download
 the [zip file](https://github.com/JohnnyDeeee/text-based-game-tutorial/archive/master.zip)
